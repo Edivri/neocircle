@@ -9,11 +9,14 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
+
         title: 'Material App',
         home: Scaffold(
             backgroundColor: Colors.grey.shade200,
             appBar: AppBar(
-              title: Text('neon circular timer'),
+              title: Text('circular timer'),
+              backgroundColor: Colors.amber,
             ),
             body: Padding(
               padding: const EdgeInsets.only(top: 50),
